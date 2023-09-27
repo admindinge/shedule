@@ -92,8 +92,6 @@ def main():
             'რომელია დიდი დასვენება': get_input_or_default('შეიყვანე რომელია დიდი დასვენება', '3')
         }
 
-        
-            
         # ᲒᲐᲜᲠᲘᲒᲘᲡ ᲒᲔᲜᲔᲠᲐᲪᲘᲐ
         schedule = generate_schedule(schedule_params)
 
