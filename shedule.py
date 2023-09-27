@@ -88,7 +88,7 @@ def generate_schedule(schedule_params):
         current_time += timedelta(minutes=lesson_duration)
 
         if (lesson_num + 1) == big_break_count and lesson_num < lessons_count - 1:
-            # Большая перемена начинается
+            # ᲓᲘᲓᲘ ᲓᲐᲡᲕᲔᲜᲔᲑᲘᲡ ᲓᲐᲡᲐᲬᲧᲘᲡᲘ
             current_time += timedelta(minutes=big_break_duration)
 
         else:
@@ -99,7 +99,7 @@ def generate_schedule(schedule_params):
 
 def main():
     """
-        ᲛᲐᲥᲐᲘᲐᲗᲐ ᲒᲐᲜᲠᲘᲒᲘᲡ ᲒᲔᲜᲔᲠᲐᲪᲘᲐ
+        ᲖᲐᲠᲘᲡ ᲒᲐᲜᲠᲘᲒᲘᲡ ᲒᲔᲜᲔᲠᲐᲪᲘᲐ
     """
     try:
 
@@ -132,7 +132,7 @@ def main():
 
         # ᲤᲐᲘᲚᲘᲡ ᲡᲐᲮᲔᲚᲘ ᲘᲥᲜᲔᲑᲐ ᲡᲙᲝᲚᲘᲡ ᲙᲝᲓᲘ
 
-        # ᲕᲮᲡᲜᲘᲗ ᲤᲐᲘᲚᲡ ᲩᲐᲬᲔᲠᲘᲡᲐᲗᲕᲘᲡ
+        # ᲕᲮᲡᲜᲘᲗ ᲤᲐᲘᲚᲘᲡ ᲩᲐᲬᲔᲠᲘᲡᲐᲗᲕᲘᲡ
         with open(school_code, 'w', encoding='utf-8') as file:
             # ᲗᲘᲗᲝᲔᲣᲚ ᲔᲚᲔᲛᲔᲜᲢᲡ ᲕᲬᲔᲠᲗ ᲤᲐᲘᲚᲨᲘ
             for item in schedule:
@@ -140,7 +140,7 @@ def main():
 
         print(f"ᲒᲐᲜᲠᲘᲒᲘ ᲩᲐᲘᲬᲔᲠᲐ ᲤᲐᲘᲚᲨᲘ {school_code}")
 
-        # Вывод расписания
+        # ᲒᲐᲜᲠᲘᲒᲘᲡ ᲒᲐᲛᲝᲢᲐᲜᲐ
         print("ᲒᲐᲙᲕᲔᲗᲘᲚᲔᲑᲘᲡ ᲒᲐᲜᲠᲘᲒᲘ:")
         print("")
         for item in schedule:
@@ -156,6 +156,6 @@ def main():
         print("ᲨᲔᲪᲓᲝᲛᲐ: ", str(value_error))
 
 
-if __name__ == "__main__":    # Параметры расписания на основе ваших данных
+if __name__ == "__main__":    # 
 
     main()
