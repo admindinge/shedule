@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# считываем код школы из файла
+school_code=$(cat "/opt/school")
+
 # Скачиваем файл с расписанием с GitHub
-github_file_url="https://raw.githubusercontent.com/admindinge/shedule/main/4751"
+github_file_url="https://raw.githubusercontent.com/admindinge/shedule/main/${school_code}"
 temp_file_path="./temp"
 curl -sSL "$github_file_url" -o "$temp_file_path"
 
