@@ -22,7 +22,7 @@ fi
 # crontab "$temp_file_path"
 
 # Вызываем filetool.sh для сохранения изменений, включая crontab
-filetool.sh -b
+# filetool.sh -b
 
 # Обновляем хеш в файле
 echo "$new_hash" > "previous_4751"

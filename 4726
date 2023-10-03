@@ -1,0 +1,28 @@
+# ᲒᲐᲙᲕᲔᲗᲘᲚᲘ 1 
+30 09 * *  1-5 sudo /home/tc/bell.c in
+15 10 * *  1-5 sudo /home/tc/bell.c out
+
+# ᲒᲐᲙᲕᲔᲗᲘᲚᲘ 2 
+25 10 * *  1-5 sudo /home/tc/bell.c in
+10 11 * *  1-5 sudo /home/tc/bell.c out
+
+# ᲒᲐᲙᲕᲔᲗᲘᲚᲘ 3 
+20 11 * *  1-5 sudo /home/tc/bell.c in
+05 12 * *  1-5 sudo /home/tc/bell.c out
+
+# ᲒᲐᲙᲕᲔᲗᲘᲚᲘ 4 
+25 12 * *  1-5 sudo /home/tc/bell.c in
+10 13 * *  1-5 sudo /home/tc/bell.c out
+
+# ᲒᲐᲙᲕᲔᲗᲘᲚᲘ 5 
+20 13 * *  1-5 sudo /home/tc/bell.c in
+05 14 * *  1-5 sudo /home/tc/bell.c out
+
+# ᲒᲐᲙᲕᲔᲗᲘᲚᲘ 6 
+15 14 * *  1-5 sudo /home/tc/bell.c in
+00 15 * *  1-5 sudo /home/tc/bell.c out
+
+# ᲒᲐᲙᲕᲔᲗᲘᲚᲘ 7 
+05 15 * *  1-5 sudo /home/tc/bell.c in
+50 15 * *  1-5 sudo /home/tc/bell.c out
+
