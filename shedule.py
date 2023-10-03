@@ -80,6 +80,9 @@ def generate_schedule(schedule_params):
     schedule.append('10 08 * * 1 sudo busybox hwclock -w')
     schedule.append('')
     schedule.append('00 00 * * 1-5 sudo /home/tc/check_shedule.sh')
+    schedule.append('')
+    schedule.append('00 07 * * 1-5 sudo /home/tc/check_shedule.sh')
+    schedule.append('')
     
     current_time = start_time
 
