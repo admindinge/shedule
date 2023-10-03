@@ -6,9 +6,9 @@
 
 10 08 * * 1 sudo busybox hwclock -w
 
-00 00 * * 1-5 sudo /home/tc/check_shedule.sh
+00 00 * * 1-5 sudo /home/tc/check_shedule.sh > /dev/null 2>&1
 
-00 07 * * 1-5 sudo /home/tc/check_shedule.sh
+00 07 * * 1-5 sudo /home/tc/check_shedule.sh > /dev/null 2>&1
 
 # ᲒᲐᲙᲕᲔᲗᲘᲚᲘ 1 
 00 09 * *  1-5 sudo /home/tc/bell.c in
